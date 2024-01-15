@@ -17,7 +17,7 @@ use App\Http\Controllers\UsuarioController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -31,4 +31,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
+    Route::resource('upp', UsuarioController::class);
+    Route::resource('propietarios', UsuarioController::class);
+    Route::resource('aretes', UsuarioController::class);
+    Route::resource('medicos', UsuarioController::class);
+    Route::resource('pruebas', UsuarioController::class);
 });

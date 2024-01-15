@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Base',
+    'title' => 'Laboratorio de Diagnóstico Patológico Pecuario, S.C.',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>Base</b>',
+    'logo' => '<b>LDPP</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
+    'logo_img_class' => 'brand-image-xs img-circle elevation-2',
     'logo_img_xl' => null,
-    'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'Base',
+    'logo_img_xl_class' => 'brand-image',
+    'logo_img_alt' => 'LDPP',
 
     /*
     |--------------------------------------------------------------------------
@@ -102,12 +102,12 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-primary',
+    'classes_auth_card' => 'bg-gradient-dark',
     'classes_auth_header' => '',
-    'classes_auth_body' => '',
+    'classes_auth_body' => 'bg-gradient-dark',
     'classes_auth_footer' => '',
-    'classes_auth_icon' => '',
-    'classes_auth_btn' => 'btn-flat btn-primary',
+    'classes_auth_icon' => 'fa-fw text-light',
+    'classes_auth_btn' => 'btn-flat btn-light',
 
     /*
     |--------------------------------------------------------------------------
@@ -320,11 +320,43 @@ return [
         // ],
         ['text'        => 'Usuarios',
         'url'         => 'usuarios',
-        'icon'        => 'fa fa-fw fa-users'],
+        'icon'        => 'fa fa-users'],
 
         ['text'        => 'Roles',
         'url'         => 'roles',
-        'icon'        => 'fa fa-fw fa-user-lock'],
+        'icon'        => 'fa fa-user-lock'],
+
+        ['text'        => 'UPP',
+        'url'         => 'upp',
+        'icon'        => 'fa fa-house'],
+
+        ['text'        => 'Propietarios',
+        'url'         => 'propietarios',
+        'icon'        => 'fa fa-hat-cowboy'],
+
+        ['text'        => 'Aretes',
+        'url'         => 'aretes',
+        'icon'        => 'fa fa-cow'],
+
+        ['text'        => 'Médicos',
+        'url'         => 'medicos',
+        'icon'        => 'fa fa-briefcase-medical'],
+
+        ['text'        => 'Pruebas',
+        'url'         => 'pruebas',
+        'icon'        => 'fa fa-vial'],
+
+        ['text'        => 'Control Interno',
+        'url'         => 'control',
+        'icon'        => 'fa fa-tachometer'],
+
+        ['text'        => 'Historia Clínica',
+        'url'         => 'historia',
+        'icon'        => 'fa fa-book'],
+
+        ['text'        => 'Informe de Resultados',
+        'url'         => 'informe',
+        'icon'        => 'fa fa-file'],
     ],
 
     /*
